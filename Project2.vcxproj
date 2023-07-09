@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{3EECD7FE-FA41-4803-97CA-09E14DE78EE9}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Project2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ag.cpp" />
+    <ClCompile Include="Al.cpp" />
+    <ClCompile Include="Ar.cpp" />
+    <ClCompile Include="B.cpp" />
+    <ClCompile Include="Ba.cpp" />
+    <ClCompile Include="Be.cpp" />
+    <ClCompile Include="Br.cpp" />
+    <ClCompile Include="C.cpp" />
+    <ClCompile Include="Ca.cpp" />
+    <ClCompile Include="Cl.cpp" />
+    <ClCompile Include="Cr.cpp" />
+    <ClCompile Include="Cu.cpp" />
+    <ClCompile Include="F.cpp" />
+    <ClCompile Include="Fe.cpp" />
+    <ClCompile Include="H.cpp" />
+    <ClCompile Include="He.cpp" />
+    <ClCompile Include="I.cpp" />
+    <ClCompile Include="K.cpp" />
+    <ClCompile Include="Kr.cpp" />
+    <ClCompile Include="Li.cpp" />
+    <ClCompile Include="Mg.cpp" />
+    <ClCompile Include="Mn.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="N.cpp" />
+    <ClCompile Include="Na.cpp" />
+    <ClCompile Include="Ne.cpp" />
+    <ClCompile Include="O.cpp" />
+    <ClCompile Include="P.cpp" />
+    <ClCompile Include="PropEl.cpp" />
+    <ClCompile Include="Ra.cpp" />
+    <ClCompile Include="React.cpp" />
+    <ClCompile Include="S.cpp" />
+    <ClCompile Include="Si.cpp" />
+    <ClCompile Include="TM.cpp" />
+    <ClCompile Include="TR.cpp" />
+    <ClCompile Include="Xe.cpp" />
+    <ClCompile Include="Zn.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ag.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Al.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Ar.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="B.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Ba.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Be.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Br.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="C.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Ca.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Cl.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Cr.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Cu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="F.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Fe.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="H.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="He.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="I.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="K.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Kr.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Li.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Mg.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Mn.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="N.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Na.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Ne.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="O.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="P.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PropEl.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Ra.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="React.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="S.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Si.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TM.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TR.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Xe.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Zn.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ag.resx">
+      <DependentUpon>Ag.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Al.resx">
+      <DependentUpon>Al.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ar.resx">
+      <DependentUpon>Ar.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B.resx">
+      <DependentUpon>B.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ba.resx">
+      <DependentUpon>Ba.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Be.resx">
+      <DependentUpon>Be.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Br.resx">
+      <DependentUpon>Br.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C.resx">
+      <DependentUpon>C.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ca.resx">
+      <DependentUpon>Ca.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cl.resx">
+      <DependentUpon>Cl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cr.resx">
+      <DependentUpon>Cr.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cu.resx">
+      <DependentUpon>Cu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F.resx">
+      <DependentUpon>F.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fe.resx">
+      <DependentUpon>Fe.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H.resx">
+      <DependentUpon>H.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="He.resx">
+      <DependentUpon>He.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I.resx">
+      <DependentUpon>I.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="K.resx">
+      <DependentUpon>K.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kr.resx">
+      <DependentUpon>Kr.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Li.resx">
+      <DependentUpon>Li.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mg.resx">
+      <DependentUpon>Mg.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mn.resx">
+      <DependentUpon>Mn.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="N.resx">
+      <DependentUpon>N.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Na.resx">
+      <DependentUpon>Na.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ne.resx">
+      <DependentUpon>Ne.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="O.resx">
+      <DependentUpon>O.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P.resx">
+      <DependentUpon>P.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropEl.resx">
+      <DependentUpon>PropEl.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ra.resx">
+      <DependentUpon>Ra.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="React.resx">
+      <DependentUpon>React.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S.resx">
+      <DependentUpon>S.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Si.resx">
+      <DependentUpon>Si.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM.resx">
+      <DependentUpon>TM.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TR.resx">
+      <DependentUpon>TR.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xe.resx">
+      <DependentUpon>Xe.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zn.resx">
+      <DependentUpon>Zn.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
